@@ -1,0 +1,13 @@
+.btn-primary,
+.btn-primary:visited,
+.btn-primary:active,
+.btn-primary:active:focus
+.btn-primary:focus {
+    background-color: rgb(236, 63, 54);
+    border-color: rgb(202, 64, 57);
+}
+
+.btn-primary:hover {
+    background-color: rgb(206, 59, 51);
+    border-color: rgb(175, 55, 49);
+}

@@ -1,0 +1,171 @@
+/* ========= Global styles ========= */
+html,
+body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-font-smothing: antialiased;
+    text-rendering: optimizeLegibility;
+    color: #6c6f73;
+}
+
+h1, h2, h3, h4 , h5, h6 {
+    color: #454545;
+}
+
+h6 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: rgb(187, 53, 46);
+    letter-spacing: 0.1rem;
+}
+
+img {
+    max-width: 100%;
+}
+.flex-brand {
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    color: white;
+}
+/* ========= General classes ========= */
+.feature-item {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    overflow: hidden;
+}
+.main-color {
+    color: rgb(236, 63, 54);
+    font-weight: bold;
+}
+
+/* ========= stage  =========*/
+#stage {
+    background: url('../img/main-background.jpg') center center no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#stage-caption {
+    font-size: 1.4rem;
+    font-weight: 200;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#stage-caption span {
+    color: rgb(236, 63, 54);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 4rem;        
+}
+
+#stage-caption p {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 1.2rem;
+}
+/* ========= feature one =========  */
+
+/* ========= feature two =========  */
+.keep-in-touch {
+     /* The background image */
+     background-image: url('../img/banner-2.jpeg');
+     /* Set a specified height, or the minimum height for the background image */
+     /* min-height: 500px; */
+     /* Set background image to fixed (don't scroll along with the page) */
+     background-attachment: fixed;
+     /* Center the background image */
+     background-position: center;
+     /* Set the background image to no repeat */
+     background-repeat: no-repeat;
+     /* Scale the background image to be as large as possible */
+     background-size: cover;  
+}
+
+.contact-input {
+    background: #363636;
+    border: #0b0e0f;
+}
+
+/* ========= Map ========= */
+#map {
+  height: 400px;
+  width: 100%;
+ }
+
+/* ========= footer ========= */
+footer {
+    background: #14141414;
+}
+
+.footer-item {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-item p{
+    padding-left: 1em;
+}
+.sub-footer {
+    background: rgb(212, 211, 211);
+    padding: 1em 0;
+}
+/* ========= Media Queries ========= */
+/* Styles for screen less than 576px */
+@media screen and ( max-width: 576px ) {
+    .feature-item {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        overflow: hidden;
+    }
+    #stage-caption span {
+        color: rgb(236, 63, 54);
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        font-size: 2rem;
+    }
+    #stage-caption p {
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        font-size: .6rem;
+    }
+    .keep-in-touch {
+        background: #14141414;
+    }
+    .contact-input {
+        background: #fff;
+        border: rgb(219, 218, 218);
+    }
+}
+/* Styles for screen greather than 576px */
+@media screen and ( min-width: 576px ) {
+    /* carousel */
+    .owl-carousel div img {
+        height: 14em;
+    }
+}
+/* Styles for screen greather than 991px */
+@media screen and ( min-width: 991px ) {
+    .feature-center-vertically {
+        margin-bottom: auto!important;
+        margin-top: auto!important;
+    }
+    
+}
+
